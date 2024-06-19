@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">   
+   <link rel="stylesheet" href="sanpham.css">
+
+</head>
+<body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo-container">
+          <a href="web.html" title="" target="_blank"><img src="hinhanh/logo.png" class="logo" alt="Your Logo"></a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="dropdown">
+              <a href="#">Xe oto</a>
+              <ul class="submenu">
+                <li><a href="vf3.html" target="_blank">VF3</a></li>
+                <li><a href="vfe34.html" target="_blank">VFE34</a></li>
+                <li><a href="vf5.html" target="_blank">VF5</a></li>
+                <li><a href="vf6.html" target="_blank">VF6</a></li>
+                <li><a href="vf7.html" target="_blank">VF7</a></li>
+                <li><a href="vf8.html" target="_blank">VF8</a></li>
+                <li><a href="vf9.html" target="_blank">VF9</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <form class="form-search" action="">
+            <div id="search-container">
+                <input type="text" id="search-text" placeholder="Bạn tìm xe nào?" required>
+                <button type="button" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+        
+        </div>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-plus"></i></div>
+    </div>
+    <div class="container">
+      <div id="cart" class="card mt-4">
+        <div class="card-body">
+          <ul id="cart-items" class="list-group mb-3">
+          </ul>
+          <button type="button" class="btn-close" aria-label="Close"></button>
+          <p id="cart-total" class="text-right font-weight-bold">Tổng tiền: <span id="total-amount">0</span> VNĐ</p>
+          <button id="checkout-btn" class="btn btn-primary btn-block">Thanh toán</button>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-4">
+          <nav class="breadcrumb">
+            <a href="web.html" target="_blank" class="breadcrumb-item">Trang chủ</a>
+            <span class="breadcrumb-item active">VF5</span>
+          </nav>
+          <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="hinhanh/a4.png" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="hinhanh/vf55.png" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="hinhanh/vf56.png" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="hinhanh/vf57.png" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="hinhanh/vf58.png" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="hinhanh/vf59.png" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="product-container">
+              <div class="color-swatches mt-3">
+                  <img src="hinhanh/vf59.png" alt="Color Option 2" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf55.png" />
+                  <img src="hinhanh/vf55.png" alt="Color Option 3" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf54.png" />
+                  <img src="hinhanh/vf56.png" alt="Color Option 4" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf56.png" />
+                  <img src="hinhanh/vf57.png" alt="Color Option 5" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf57.png" />
+                  <img src="hinhanh/vf58.png" alt="Color Option 6" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf58.png" />
+            </div>
+          </div>
+          </div>
+          <div class="col-8">
+            <div class="product-info summary col-fit col entry-summary product-summary text-left form-flat">
+              <h1 class="product-title product_title entry_title">VINFAST VF5</h1>
+              <div class="price-wrapper">
+                <p class="price product-page-price"></p>
+              </div>
+              <div class="product-short-description">
+                <h3 style="font-size: 110%; background-color: #e0e0e0; padding: 5px; text-align: left;">GIÁ XE Ô TÔ ĐIỆN VINFAST VF 5</h3>
+                <p>
+                  <strong>VinFast VF5 (Thuê Pin):</strong>
+                  <strong id="price-rent" class="gia" style="color: #00adef;">468.000.000 VNĐ</strong>
+                </p>
+                <p>
+                  <strong>VinFast VF3 (Mua Pin):</strong>
+                  <strong id="price-buy" style="color: #00adef;">548.000.000 VNĐ</strong>
+                </p>
+                <p style="background-color: #e0e0e0; padding: 5px; text-align: left;">
+                  <strong>~300 km </strong>/1 lần sạc  |  Công suất tối đa<strong>100 kW – 134hp</strong>
+                </p>
+                <p style="border-radius: 3px; background-color: #1464f4; color: white; padding: 5px; text-align: left; font-size: 80%;">
+                  <strong>Khuyến mãi & ưu đãi</strong><br>
+                  <em>
+                    – Áp dụng Voucher Vinhome 70 triệu
+                  </em>
+                </p>
+              </div>
+              <button id="addToCartBtn" class="btn btn-primary mt-3">Thêm vào giỏ hàng</button>
+            </div>          
+          </div>
+        </div>
+      </div>
+    <div class="container mt-4">
+      <h2 ><strong>VinFast VF5</strong></h2>
+      <table class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th colspan="2" style="text-align: center;">Chính sách ưu đãi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="width: 30%; text-align: right;">Giảm 4% cho khách hàng mua trả thẳng:</th>
+            <td>Khách hàng mua xe và thanh toán toàn bộ số tiền một lần.</td>
+          </tr>
+          <tr>
+            <th style="width: 30%; text-align: right;">Ưu đãi lãi suất trả góp:</th>
+            <td>
+              <ul>
+                <li>5% trong 2 năm đầu</li>
+                <li>8% cho 3 năm tiếp theo</li>
+                <li>9.5% cho 3 năm cuối</li>
+              </ul>
+              Tối đa 8 năm trả góp.
+            </td>
+          </tr>
+          <tr>
+            <th style="width: 30%; text-align: right;">Giảm thêm 5% cho Khách Hàng đang sử dụng xe xăng Vinfast (Fadil, LuxA, LuxSA):</th>
+            <td>Tặng gói bảo dưỡng 3-5 triệu VNĐ.</td>
+          </tr>
+          <tr>
+            <th style="width: 30%; text-align: right;">Đặc biệt:</th>
+            <td>Xe có kèm theo phụ kiện sạc nhanh tại nhà 7.4kW.</td>
+          </tr>
+          <tr>
+            <th style="width: 30%; text-align: right;">Số tiền đặt cọc:</th>
+            <td>Đặt cọc <strong>20.000.000 VNĐ/xe</strong>. Khách hàng có thể đặt cọc giữ chính sách ưu đãi trong tháng nếu trong thời gian chưa có xe đáp ứng và chuyển sang CTKM tháng sau mà khách hàng mong muốn.</td>
+          </tr>
+          <tr>
+            <th style="width: 30%; text-align: right;">Giá xe, giá thuê pin:</th>
+            <td>
+              <ul>
+                <li>Vf5 plus thuê pin: 468.000.000 VNĐ (Khách hàng cần cọc pin 15 triệu VNĐ)</li>
+                <li>Vf5 plus mua pin: 548.000.000 VNĐ</li>
+              </ul>
+              <p>Giá thuê pin tương ứng với số km hàng tháng:</p>
+              <ul>
+                <li>Quãng đường di chuyển ít hơn 1.500km/tháng => Giá thuê pin 1.200.000 VNĐ/tháng</li>
+                <li>Quãng đường di chuyển từ 1.500 đến 3.000km/tháng => Giá thuê pin 1.600.000 VNĐ/tháng</li>
+                <li>Quãng đường di chuyển trên 3.000km => Giá thuê pin 2.700.000 VNĐ/tháng</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>      
+      <img src="hinhanh/vf55.png" class="anhgt" alt="">
+      <div class="container mt-4">
+        <dl>
+            <dt><h4 class="text-info">THIẾT KẾ VINFAST VF 5</h4></dt>
+            <dd>-VinFast VF 5 nhỏ gọn, trẻ trung, cá tính cùng khoang nội thất hướng theo phong cách tối giản, tiện dụng. Thiết kế nhỏ gọn giúp xe có thể di chuyển linh hoạt qua các đường phố đông đúc một cách dễ dàng
+
+              Xe có bảng màu đa dạng gồm 16 lựa chọn màu ngoại thất và 3 lựa chọn màu nội thất, đảm bảo cá nhân hóa lựa chọn theo phong cách, cá tính, sở thích của mỗi khách hàng 
+            </dd>
+        </dl>
+    </div>
+      <img src="hinhanh/vf51.png" class="anhgt" alt="">
+      <div class="container mt-4">
+        <dl>
+            <dt><h4 class="text-info">Thân Xe VinFast VF 5</h4></dt>
+            <dd>-Thân xe được phối 2 tông màu vô cùng thời thượng. VF5 Plus có chiều dài cơ sở 2.513 mm, kích thước các chiều dài, rộng, cao lần lượt là 3.965 x 1.720 x 1.580 (mm), 
+              Bộ la-zăng hợp kim kích thước 17 inch, tạo hình 5 chấu lớn Ốp mặt ngoài gương chiếu hậu giống màu nóc xe, tay nắm cửa đồng màu thân xe, tạo nên sự đồng nhất trong thiết kế và thẩm mỹ Tổng thể xe với sự xuất hiện của loạt đường gân dập nổi tạo sự mạnh mẽ, đúng chất SUV
+            </dd>
+        </dl>
+    </div>
+      <img src="hinhanh/vf52.png" class="anhgt" alt="">
+      <div class="container mt-4">
+        <dl>
+            <dt><h4 class="text-info">TÍNH NĂNG AN TOÀN</h4></dt>
+            <dd>-VinFast VF 5 Plus được trang bị đầy đủ những công nghệ tiên tiến bậc nhất như: Giám sát hành trình cơ bản, Cảnh báo giao thông phía sau, Cảnh báo điểm mù, Cảnh báo luồng giao thông đến khi mở cửa,
+               Hỗ trợ đỗ xe phía sau, Hỗ trợ phanh khẩn cấp, Hệ thống cân bằng điện tử, Hỗ trợ khởi hành ngang dốc, Giám sát áp suất lốp…
+            </dd>
+        </dl>
+    </div>
+      <img src="hinhanh/vf53.png" class="anhgt" alt="">
+      <dd>-VinFast VF 5 Plus được trang bị hàng loạt công nghệ tiên tiến dẫn đầu phân khúc như: Thiết lập, theo dõi, ghi nhớ hồ sơ người lái; Định vị vị trí xe từ xa; Chẩn đoán lỗi trên xe tự động; 
+        Giám sát và cảnh báo xâm nhập trái phép; Đề xuất lịch bảo trì/bảo dưỡng tự động… Mẫu ô tô điện cỡ A cũng được tích hợp các ứng dụng, tiện ích thông minh như Trợ lý ảo điều khiển bằng giọng nói, Mua sắm trực tuyến trên xe, Cập nhật phần mềm từ xa, Lên lịch sạc pin theo thói quen sử dụng, Điều khiển các thiết bị smart home…, giúp nâng tầm trải nghiệm và kiến tạo một phong cách sống đẳng cấp, văn minh, hiện đại cho người sở hữu.
+      </dd>
+      <img src="hinhanh/vf54.png" class="anhgt" alt="">
+      <div class="container mt-4">
+        <dl>
+            <dt><h4 class="text-info">ĐỘNG CƠ</h4></dt>
+            <dd>-Xe được trang bị một động cơ điện công suất tối đa 100 kW, mô-men xoắn cực đại 135 Nm, cùng hệ dẫn động cầu trước. Bộ pin lithium của VinFast 
+              VF 5 Plus có dung lượng 37,23 kWh, cho quãng đường di chuyển sau một lần sạc đầy lên tới hơn 300 km (theo tiêu chuẩn NEDC). Với các thông số trên,
+               VF 5 Plus có khả năng vận hành linh hoạt, mạnh mẽ và đặc biệt phù hợp với giao thông đô thị.
+            </dd>
+        </dl>
+    </div>
+    </div>
+    
+    <div class="container mt-4">
+      <h3 style="text-align: center;">ĐĂNG KÝ TƯ VẤN TRẢ GÓP</h3>
+      <form>
+        <div class="mb-3 row">
+          <label for="fullname" class="col-sm-3 col-form-label">Họ và tên</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="fullname" aria-label="Full name" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="address" class="col-sm-3 col-form-label">Địa chỉ</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="address" aria-label="Address" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="phone" class="col-sm-3 col-form-label">Số điện thoại</label>
+          <div class="col-sm-9">
+            <input type="tel" class="form-control" id="phone" aria-label="Phone number" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="car-type" class="col-sm-3 col-form-label">Loại xe</label>
+          <div class="col-sm-9">
+            <select class="form-select" id="car-type" aria-label="Car type" required>
+              <option selected disabled>Chọn loại xe</option>
+              <option value="1">VF3</option>
+              <option value="2">VFe34</option>
+              <option value="3">VF5</option>
+              <option value="3">VF6</option>
+              <option value="3">VF6 PLUS</option>
+              <option value="3">VF7</option>
+              <option value="3">VF8</option>
+              <option value="3">VF9</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="message" class="col-sm-3 col-form-label">Nội dung</label>
+          <div class="col-sm-9">
+            <select class="form-select" id="message" aria-label="Message" required>
+              <option selected disabled>Chọn nội dung</option>
+              <option value="1">6 tháng</option>
+              <option value="2">9 tháng</option>
+              <option value="3">12 tháng</option>
+              <option value="3">24 tháng</option>
+              <option value="3">36 tháng</option>
+              <option value="3">48 tháng</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <button id="btn" type="submit" class="btn btn-primary">Gửi</button>
+        </div>
+   
+      </form>
+    </div>
+    
+    
+    
+    <script src="./sanpham.js"></script>
+    <script src="./quan.js"></script> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">   
+   <link rel="stylesheet" href="sanpham.css">
+
+</head>
+<body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo-container">
+          <a href="web.html" title="" target="_blank"><img src="hinhanh/logo.png" class="logo" alt="Your Logo"></a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="dropdown">
+              <a href="#">Xe oto</a>
+              <ul class="submenu">
+                <li><a href="vf3.html" target="_blank">VF3</a></li>
+                <li><a href="vfe34.html" target="_blank">VFE34</a></li>
+                <li><a href="vf5.html" target="_blank">VF5</a></li>
+                <li><a href="vf6.html" target="_blank">VF6</a></li>
+                <li><a href="vf7.html" target="_blank">VF7</a></li>
+                <li><a href="vf8.html" target="_blank">VF8</a></li>
+                <li><a href="vf9.html" target="_blank">VF9</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <form class="form-search" action="">
+            <div id="search-container">
+                <input type="text" id="search-text" placeholder="Bạn tìm xe nào?" required>
+                <button type="button" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+        
+        </div>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-plus"></i></div>
+    </div>
+    <div class="container">
+      <div id="cart" class="card mt-4">
+        <div class="card-body">
+          <ul id="cart-items" class="list-group mb-3">
+          </ul>
+          <button type="button" class="btn-close" aria-label="Close"></button>
+          <p id="cart-total" class="text-right font-weight-bold">Tổng tiền: <span id="total-amount">0</span> VNĐ</p>
+          <button id="checkout-btn" class="btn btn-primary btn-block">Thanh toán</button>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-4">
+          <nav class="breadcrumb">
+            <a href="web.html" target="_blank" class="breadcrumb-item">Trang chủ</a>
+            <span class="breadcrumb-item active">VF7</span>
+        </nav>
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="hinhanh/a2.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="hinhanh/vf71.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="hinhanh/vf72.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="hinhanh/vf73.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="hinhanh/vf74.png" class="d-block w-100" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="product-container">
+            <div class="color-swatches mt-3">
+                <img src="hinhanh/a2.png" alt="Color Option 1" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf72.png" />
+                <img src="hinhanh/vf71.png" alt="Color Option 2" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf73.png" />
+                <img src="hinhanh/vf72.png" alt="Color Option 3" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf74.png" />
+                <img src="hinhanh/vf73.png" alt="Color Option 4" class="color-swatch img-thumbnail" data-color-image="hinhanh/vf71.png" />
+                <img src="hinhanh/vf74.png" alt="Color Option 5" class="color-swatch img-thumbnail" data-color-image="hinhanh/a2.png" />
+          </div>
+        </div>
+        </div>
+        <div class="col-8">
+          <div class="product-info summary col-fit col entry-summary product-summary text-left form-flat">
+            <h1 class="product-title product_title entry_title">VINFAST VF7</h1>
+            <div class="price-wrapper">
+              <p class="price product-page-price"></p>
+            </div>
+            <div class="product-short-description">
+              <h3 style="font-size: 110%; background-color: #e0e0e0; padding: 5px; text-align: left;">GIÁ XE Ô TÔ ĐIỆN VINFAST VF 7</h3>
+              <p>
+                <strong>VinFast VF7 BASE:</strong>
+                <strong id="price-rent" class="gia" style="color: #00adef;">861.000.000 VNĐ</strong>
+              </p>
+              <p>
+                <strong>VinFast VF7 PLUS:</strong>
+                <strong id="price-buy" style="color: #00adef;">1.011.000.000 VNĐ</strong>
+              </p>
+              <p>
+                <strong>VinFast VF7 PLUS (Trần kính toàn cảnh):</strong>
+                <strong id="price-buy" style="color: #00adef;">1.036.000.000 VNĐ</strong>
+              </p>
+              <p style="background-color: #e0e0e0; padding: 5px; text-align: left;">
+                <strong>431 km</strong>
+                /1 lần sạc  |  Công suất tối đa
+                <strong> 260kW – 349 hp</strong>
+              </p>
+              <p style="border-radius: 3px; background-color: #1464f4; color: white; padding: 5px; text-align: left; font-size: 80%;">
+                <strong>Khuyến mãi & ưu đãi</strong><br>
+                <em>
+                  – Đặt cọc 50 triệu VNĐ<br>– Nhận Vourcher & quà tặng giá trị</em>
+              </p>
+            </div>
+            <button id="addToCartBtn" class="btn btn-primary mt-3">Thêm vào giỏ hàng</button>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="video-container">
+        <img src="hinhanh/vf79.png" class="anhgt" alt="">
+      </div>
+      <div class="container mt-4">
+        <dl>
+            <dt><h4 class="text-info">VINFAST VF7</h4></dt>
+        </dl>
+    </div>
+      <img src="hinhanh/vf71.png" class="anhgt" alt="">
+      <div class="container mt-4">
+        <dl>
+            <dt><h4 class="text-info">NỘI THẤT VINFAST VF 7</h4></dt>
+            <dd><strong>Kiến tạo không gian trải nghiệm phóng khoáng, tự do và tràn đầy năng lượng.</strong></dd>
+            <dd>Tận hưởng hành trình trong không gian riêng tư và rộng rãi của chiếc xe, nơi mỗi chi tiết mang đậm dấu ấn cá nhân tạo nên cuộc phiêu lưu độc đáo của riêng bạn.</dd>
+        </dl>
+    </div>
+      <img src="hinhanh/vf75.png" class="anhgt" alt="">
+      <div class="container mt-4">
+        <dl>
+            <dt><h4 class="text-info">THIẾT KẾ VINFAST VF7</h4></dt>
+            <dd><strong>Triết lý thiết kế “Vũ trụ phi đối xứng”.</strong></dd>
+            <dd>VINFAST VF7 lấy cảm hứng từ vũ trụ và các vật thể bay trong không gian,
+               VinFast VF 7 hiện thân cho sự tự do, công nghệ, thời đại, cá tính,
+               mạnh mẽ và thể thao, thoả mãn mọi tâm hồn đam mê thẩm mỹ và tốc độ.</dd>
+        </dl>
+    </div>
+      <img src="hinhanh/vf76.png" class="anhgt" alt="">
+      <dd>Những đường nét và hình khối được sử dụng nhịp nhàng và tinh tế, 
+        mang đến cho chủ nhân VinFast VF 7 không gian trải nghiệm đầy phóng khoáng và tràn đầy năng lượng;
+         song vẫn không làm mất đi sự tối giản, tinh khiết và thời trang vốn có của mẫu xe đánh thức mọi đam mê.</dd>
+      <img src="hinhanh/vf77.png" class="anhgt" alt="">
+      <dd>Thiết kế phần đầu xe thon gọn, dựa trên hình ảnh của chiếc phi thuyền không gian, với điểm nhấn là cụm đèn định 
+        vị cánh chim – chữ V đặc trưng kéo dài liên tưởng tới đến những pha bứt tốc mạnh mẽ vượt thời không và sự chuyển 
+        hướng linh hoạt trên không trung.</dd>
+      <img src="hinhanh/vf78.png" class="anhgt" alt="">
+
+
+
+    </div>
+    
+    <div class="container mt-4">
+      <h3 style="text-align: center;">ĐĂNG KÝ TƯ VẤN TRẢ GÓP</h3>
+      <form>
+        <div class="mb-3 row">
+          <label for="fullname" class="col-sm-3 col-form-label">Họ và tên</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="fullname" aria-label="Full name" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="address" class="col-sm-3 col-form-label">Địa chỉ</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="address" aria-label="Address" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="phone" class="col-sm-3 col-form-label">Số điện thoại</label>
+          <div class="col-sm-9">
+            <input type="tel" class="form-control" id="phone" aria-label="Phone number" required>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="car-type" class="col-sm-3 col-form-label">Loại xe</label>
+          <div class="col-sm-9">
+            <select class="form-select" id="car-type" aria-label="Car type" required>
+              <option selected disabled>Chọn loại xe</option>
+              <option value="1">VF3</option>
+              <option value="2">VFe34</option>
+              <option value="3">VF5</option>
+              <option value="3">VF6</option>
+              <option value="3">VF6 PLUS</option>
+              <option value="3">VF7</option>
+              <option value="3">VF8</option>
+              <option value="3">VF9</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="message" class="col-sm-3 col-form-label">Nội dung</label>
+          <div class="col-sm-9">
+            <select class="form-select" id="message" aria-label="Message" required>
+              <option selected disabled>Chọn nội dung</option>
+              <option value="1">6 tháng</option>
+              <option value="2">9 tháng</option>
+              <option value="3">12 tháng</option>
+              <option value="3">24 tháng</option>
+              <option value="3">36 tháng</option>
+              <option value="3">48 tháng</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <button id="btn" type="submit" class="btn btn-primary">Gửi</button>
+        </div>
+   
+      </form>
+    </div>
+    <script src="./sanpham.js"></script>
+    <script src="./quan.js"></script> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
